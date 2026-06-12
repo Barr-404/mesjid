@@ -79,7 +79,7 @@ async function generateTabunganQurbanPDF(user: any) {
     doc.setFontSize(16);
     doc.text('LAPORAN TABUNGAN QURBAN', 105, 20, { align: 'center' });
     doc.setFontSize(12);
-    doc.text('Masjid Muhammadiyah Rahmatullah', 105, 30, { align: 'center' });
+    doc.text('Masjid Muhammadiyah', 105, 30, { align: 'center' });
     doc.text(`Tanggal Cetak: ${formatDate(new Date().toISOString())}`, 105, 40, { align: 'center' });
 
     let y = 55;

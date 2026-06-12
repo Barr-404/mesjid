@@ -123,7 +123,7 @@ const Sidebar = () => {
             <h1 className="text-white font-bold text-base leading-tight mb-1">Sistem Administrasi</h1>
             <h2 className="text-white font-bold text-base leading-tight mb-2">Masjid</h2>
             <div className="h-px bg-white/30 my-3" />
-            <p className="text-white/70 text-xs italic">Masjid Muhammadiyah Rahmatullah</p>
+            <p className="text-white/70 text-xs italic">Masjid Muhammadiyah</p>
           </div>
         </div>
       </div>

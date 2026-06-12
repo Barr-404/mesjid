@@ -31,10 +31,10 @@ export async function POST(request: NextRequest) {
 
     // Insert user baru
     const result = await pool.query(
-      `INSERT INTO users (email, password, nama, role)
+      `INSERT INTO users (username, email, password_hash, role)
        VALUES ($1, $2, $3, 'user')
-       RETURNING id, email, nama, role, created_at`,
-      [email, hashedPassword, nama]
+       RETURNING id, email, username as nama, role, created_at`,
+      [nama, email, hashedPassword]
     );
 
     return NextResponse.json({

@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
 
     // Cari user berdasarkan email
     const result = await pool.query(
-      'SELECT id, email, password, nama, role FROM users WHERE email = $1',
+      'SELECT id, email, password_hash, username as nama, role FROM users WHERE email = $1',
       [email]
     );
 
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     const user = result.rows[0];
 
     // Verify password
-    const isPasswordValid = await bcrypt.compare(password, user.password);
+    const isPasswordValid = await bcrypt.compare(password, user.password_hash);
 
     if (!isPasswordValid) {
       return NextResponse.json({

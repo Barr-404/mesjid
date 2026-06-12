@@ -1,4 +1,4 @@
-# Dokumentasi Fitur Baru - Sistem Masjid Muhammadiyah Rahmatullah
+# Dokumentasi Fitur Baru - Sistem Masjid Muhammadiyah
 
 ## 🎨 Desain Minimalist
 
